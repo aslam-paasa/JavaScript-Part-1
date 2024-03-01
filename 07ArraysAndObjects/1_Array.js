@@ -1,0 +1,1 @@
+// AJAX Call with the help of fetch API

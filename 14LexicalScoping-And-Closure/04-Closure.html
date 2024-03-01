@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure aur Chai</title>
+</head>
+<body>
+    <!-- Goal : Iss button k click hone se background ko orange kr do -->
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+    <script>
+        // Similarly 500 buttons aur unke colors ki list mili h
+        // Aur aise krnge to DRY Principle violate kr denge
+        // To hum ek click handler bna lete hai
+
+
+        // document.getElementById("orange").onclick = function() {
+        //     document.body.style.backgroundColor = `orange`;
+        // }
+
+        // document.getElementById("green").onclick = function() {
+        //     document.body.style.backgroundColor = `green`;
+        // }
+
+
+        // Ab jo v color paas krnge wo aa jaegi
+        function clickHandler(color) {
+            // document.body.style.backgroundColor = `{color}`;
+            return function() {
+                // aur agar humein closure/lexical scoping pta h tbhi iss color ka access iske paas hai
+                // Isi wajah se humara code work krta hai closure se
+                document.body.style.backgroundColor = `${color}`;
+            }
+        }
+
+        // Problem : Humne function nhi diya h, humne diya h function ka reference
+        // Function ka reference means mai aapko definition de deta hu bss 
+        // document.getElementById('orange').onclick = clickHandler
+
+        // Agar function v pass kr du to color pass krna pdega
+        // Fir to by default orange set ho gya
+        document.getElementById('orange').onclick = clickHandler("orange");
+        // Ab green ho gya
+        // Orange click krne pe orange ho hi nhi rha hai
+        document.getElementById('green').onclick = clickHandler("green");
+        // actually m humein clickHandler k andr ek function likhna pdega
+    </script>
+</html>

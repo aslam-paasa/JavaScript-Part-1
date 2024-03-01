@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure aur Chai</title>
+</head>
+<body>
+    <!-- Goal: When any button is clicked, change the background color accordingly -->
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+<script>
+    /*
+        Problem Explanation:
+        
+        When assigning event handlers to the buttons directly, 
+        if we pass the color directly to the clickHandler function:
+        
+        document.getElementById('orange').onclick = clickHandler("orange");
+        
+        the clickHandler function is immediately called with the provided color, 
+        and its returned function is assigned as the event handler. 
+        
+        This results in the color being set immediately rather than 
+        waiting for the button to be clicked. As a result, only the last color (green) would be applied to both buttons.
+        
+        Closure Solution Explanation:
+        
+        By using closure, we create a function within the clickHandler function 
+        that remembers the color variable even after the outer function has finished executing. 
+        
+        So, when the returned function is assigned as the event handler, 
+        it still has access to the color variable defined in the outer clickHandler function, 
+        preserving the intended color association even when the event handler is executed later.
+    */
+
+    // Define the clickHandler function which returns a function to change background color
+    function clickHandler(color) {
+        return function() {
+            // Use closure to access the color parameter
+            document.body.style.backgroundColor = `${color}`;
+        }
+    }
+
+    // Assign the click handler functions to the onclick event of each button
+    // Pass the respective colors to set the background color appropriately
+    document.getElementById('orange').onclick = clickHandler("orange");
+    document.getElementById('green').onclick = clickHandler("green");
+</script>
+</html>
