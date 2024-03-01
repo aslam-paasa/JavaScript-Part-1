@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Object Loop</title>
+</head>
+<body>
+    <p>Accessing JSON Object Keys and Values using for/in Loop</p>
+    <div id="myid">
+
+    </div>
+    <script>
+        var obj = {"name":"Raj Singh","mobile":9999999999,"city":"NDLS"};
+        for(var i in obj)
+        {
+            // document.getElementById("myid").innerHTML += i+"</br>";
+            // document.getElementById("myid").innerHTML += obj[i]+"</br>";
+            document.getElementById("myid").innerHTML += i+":"+obj[i]+"</br>";
+        }
+    </script>
+</body>
+</html>

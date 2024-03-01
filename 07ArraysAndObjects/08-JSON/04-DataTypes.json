@@ -1,0 +1,15 @@
+{
+    "name":"Raj Singh",
+    "marks":78,
+    "date":"2020-05-14",
+    "courses":["DART","FLUTTER","KOTLINE","IONIC"],
+    "address":{
+        "city":"NDLS",
+        "area":"Anand Vihar",
+        "pin":34434,
+        "lon":89.2323,
+        "lat":45.5454
+    },
+    "married":false,
+    "dod":null
+}

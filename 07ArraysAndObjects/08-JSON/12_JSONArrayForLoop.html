@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Array For Loop</title>
+</head>
+<body>
+    <h2>Accessing JSON Array Values using For Loop</h2>
+    <div id="myid">
+
+    </div>
+    <script>
+        var obj,i,x="";
+        obj = {
+            "name":"Raj Singh",
+            "mobile":999999999,
+            "courses":["PHP","Java","JavaScript","Kotlin",]
+        };
+
+        // Modifying Array Values
+        obj.courses[0]="Android";
+
+        // Delete Array index value
+        delete obj.courses[2];
+
+        // Modifying Key Value
+        obj.mobile = 2323232323;
+
+        // Delete JSON Key
+        delete obj.mobile;
+        
+        for(i=0; i<obj.courses.length; i++)
+        {
+            x += obj.courses[i]+"<br/>";
+        }
+        // document.getElementById("myid").innerHTML=x;
+        document.getElementById("myid").innerHTML="Name: "+obj.name+"<br/>Mobile: "+obj.mobile;
+    </script>
+</body>
+</html>

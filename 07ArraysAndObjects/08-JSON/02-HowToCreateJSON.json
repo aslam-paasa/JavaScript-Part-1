@@ -1,0 +1,10 @@
+{
+    "Name":"Mohammad Aslam",
+    "Mobile":9999999999,
+    "City":"LKO",
+    "Course":["DART","FLUTTER","KOTLIN","ANDROID"],
+    "Address":{
+        "Area":"Whitefield, Bangalore",
+        "Pincode":560066
+    }
+}

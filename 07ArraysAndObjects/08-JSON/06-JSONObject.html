@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Object</title>
+</head>
+<body>
+    <p>Accessing JSON Object Value using dot(".") Notation</p>
+    <div id="Myid">
+
+    </div>
+
+    <script>
+        var obj = {"name":"Raj Singh","mobile":9999999999,"city":"NDLS"};
+        // Accessing JSON Object Value using dot(".") Notation
+
+        // var Name = obj.name;
+        // var Mobile = obj.mobile;
+        // var City = obj.city;
+
+        // Accessing JSON Object Value using [] notation
+
+        var Name = obj["name"];
+        var Mobile = obj["mobile"];
+        var City = obj["city"];       
+
+
+        document.getElementById("Myid").innerHTML=Name+"<br/>"+Mobile+"<br/>"+City;
+    </script>
+</body>
+</html>

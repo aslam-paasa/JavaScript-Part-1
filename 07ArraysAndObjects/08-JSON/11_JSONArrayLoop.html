@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Array Loop</title>
+</head>
+<body>
+    <h2>Accessing JSON Array Values using for/in Loop</h2>
+    <div id="myid">
+
+    </div>
+    <script>
+        var obj,i,x="";
+        obj = {
+            "name":"Raj Singh",
+            "mobile":999999999,
+            "course":["PHP","Java","JavaScript","Kotlin",]
+        };
+
+        for(i in obj.course)
+        {
+            x += obj.course[i]+"<br/>";
+        }
+        document.getElementById("myid").innerHTML=x;
+
+    </script>
+</body>
+</html>

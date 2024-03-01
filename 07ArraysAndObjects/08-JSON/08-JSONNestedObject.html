@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Nested Object</title>
+</head>
+<body>
+    <h2>Accessing JSON Nested Object Value using dot & bracket Notation</h2>
+    <div id="myid"></div>
+    <script>
+        var obj = {
+            "name":"Raj Singh",
+            "mobile":9999999999,
+            "courses":{
+                "course1":"PHP",
+                "course2":"ANDROID",
+                "course3":".NET"
+            }
+        };
+
+        // Dot(".") Notation
+        // c1=obj.courses.course1;
+        // c2=obj.courses.course2;
+        // c3=obj.courses.course3;
+        // document.getElementById("myid").innerHTML=c1+", "+c2+", "+c3;
+
+        // Bracket ([]) Notation
+        c1=obj.courses["course1"];
+        c2=obj.courses["course2"];
+        c3=obj.courses["course3"];
+        document.getElementById("myid").innerHTML=c1+", "+c2+", "+c3;
+
+    </script>
+</body>
+</html>

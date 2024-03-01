@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Array</title>
+</head>
+<body>
+    <h2>Accessing JSON Array Value</h2>
+    <div id="myid">
+
+    </div>
+
+    <script>
+        var obj = {
+        "name":"Raj Singh",
+        "mobile":999999999,
+        "course":["PHP","Java","JavaScript","Kotlin",]
+    };
+
+    var c1=obj.course[0];
+    var c2=obj.course[1];
+    var c3=obj.course[2];
+    var c4=obj.course[3];
+    
+    document.getElementById("myid").innerHTML=c1+", "+c2+", "+c3+", "+c4;
+    </script>
+</body>
+</html>
