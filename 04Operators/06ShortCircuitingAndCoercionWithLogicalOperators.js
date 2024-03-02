@@ -2,6 +2,19 @@
 (1) Short Circuiting
 (2) Conversion of Values to Boolean
 
+Introduction :
+-> Suppose we are having 5 steps and in 1st step itself we got the result so we are
+   not going for go to next steps. Thats is the reason using which we do not have 
+   to perform entire expression, as soon as the result is determined we can stop
+   the evaluation and print the result. This is often used in logical operator
+   that is our "&&" logical AND and "||" logical OR operators.
+-> IN JS, some logical operators, such as the "&&" or "||" operator, have a feature
+   called as "short-circuiting".
+-> So short-circuiting in logical operators, means that, in certain conditions,
+   the operator will immediately return the first value and not even look at the
+   second value.
+
+Conversion of Value to Boolean :
  - Wherever we put logical &&, ||, we have some value to the left side and
    we have some value to the right side.
    LeftSide && RightSide
@@ -89,3 +102,4 @@ console.log((10 > 6) && (6 < 7));
 console.log(10 || 0);
 console.log(6 || 19);
 console.log(0 || -0); // both are falsy
+
