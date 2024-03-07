@@ -163,7 +163,7 @@ Step-2 outer();
             Note : Jaise hi ye complete hua to iski LEC destroy ho jaega then fir wo apne parent k paas jaega but wo v complete ho gya to Outer ki LEC v destroy ho jaega.
             Ab hum outer k baad console.log(b); pe jaenge
     
-    Note : We call this 'LEXICAL sCOPE LEXICAL ENVIRONMENT CHAINING' (vvi)
+    Note : We call this 'LEXICAL SCOPE LEXICAL ENVIRONMENT CHAINING' (vvi)
 
 Step-3 : console.log(b);
         -> humare paas 'b' to hi to hum 10 print kr dnge.
