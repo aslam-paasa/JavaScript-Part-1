@@ -1,8 +1,4 @@
-/**
- * bind() method :
- * The .bind() method is used to create a new function.
- * It allows you to set the context (this) for a function and "bind" that function
- * to a specific object*/ 
+
 
 // "bind" method v same "call" k tarah kaam krta hai
 // But call & apply function ko immediately call kr rhe the 

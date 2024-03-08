@@ -1,3 +1,5 @@
+// Call, Apply and Bind function helps us to bind our "this" keyword
+// or "bind" the context of "this", manually to a particular object.
 console.log("Call Apply Bind..");
 
 const per1 = {

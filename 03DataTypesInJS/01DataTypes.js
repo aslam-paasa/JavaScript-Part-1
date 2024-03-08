@@ -198,7 +198,7 @@ console.log(booleanIsLoggedIn3); // true => hitesh
 
 
 
-// Covert string into string
+// Convert string into string
 let someNumber = 33;
 
 let stringNumber = String(someNumber);
