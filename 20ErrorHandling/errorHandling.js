@@ -12,10 +12,10 @@
 +-------------------------------------+
 
     try {
-        // body of try
+         body of try
     }
     catch(error) {
-        // body of catch
+         body of catch
     }
     
  - The main code is inside the "try" block. While executing the "try",
