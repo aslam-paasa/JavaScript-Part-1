@@ -1,4 +1,4 @@
-/* How do we prepare this blue print?
+/*How do we prepare this blue print?
  - In JavaScript we have a "class" keyword.
  - Using the class keyword we can prepare blue-print. 
  -  Syntax : 

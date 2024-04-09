@@ -1,4 +1,4 @@
-/* Existence of Prototype in JS :
+/*Existence of Prototype in JS :
    This forms the base of OOP in JS.
    By default, objects are created using constructor calls with the new keyword.
    Classes act as blueprints, and objects are instances of these classes.
