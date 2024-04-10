@@ -1,4 +1,4 @@
-/* What are the types of Array?
+/*What are the types of Array?
 - Array can be divided into two types of Arrays :
  1. Single Dimension Arrays (We have discussed above)
  2. Multi-Dimensional Arrays - 

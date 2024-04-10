@@ -53,9 +53,9 @@ Advantage of Arrays :-
    index number.
 
    arr = +---------------------------+
-      | 11 | 12 | 20 | 2 | 5 | 30 |
-      +---------------------------+
-         0    1    2   3   4   5
+         | 11 | 12 | 20 | 2 | 5 | 30 |
+         +---------------------------+
+            0    1    2   3   4   5
              
 2. Arrays are stored in contiguous manner. Means it is going to store 
    continuously. Hence, there is not possibility of additional memory
