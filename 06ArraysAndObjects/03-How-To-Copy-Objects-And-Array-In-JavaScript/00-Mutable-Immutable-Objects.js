@@ -2,14 +2,14 @@
 // If the value can change, the object is called mutable, while if the value
 // cannot change, the object is called immutable.
 
-// How we know which is mutable and which is immutable?
+// How do we know which is mutable and which is immutable?
 // (a) Primitive Types : string, number, boolean, symbol, null, undefined
 //     They are directly stored in the location variable axis.
 //  -> Basically immutable
 
 // (b) Non-primitive types/Reference Types : Array & Objects
-//     Stored in variable location which is pointer to allocatin of the memory
-//     where the object is stored
+//     Stored in variable location which is pointed to allocation of the memory
+//     where the object is stored.
 //  -> Immutable
 
 
