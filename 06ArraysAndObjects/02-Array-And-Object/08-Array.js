@@ -16,7 +16,7 @@
         // Delhi
         // Kolkata
         // Lucknow
-        // Chennai*/ 
+        // Chennai*/
 /*   
 
 What are Multi-Dimensional Array?
@@ -44,10 +44,10 @@ To initialize 2D Array :-
 
 Note : "arr.length" will tell "total no. of rows"
 Note : To find the column we have to enter inside particular or each row -
-       arr[0].length will tell "total no. of column".*/ 
+       arr[0].length will tell "total no. of column".*/
 
 // 2-d array
-const arr4 = [[1,2,3], [4,5,6], [7,8,9]];
+const arr4 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
 // Find rows & columns
 console.log(`total number of rows = ${arr4.length}`); // total number of rows
 console.log(`total number of columns = ${arr4[0].length}`); // total number of cols present in row 0
@@ -57,15 +57,14 @@ console.log(`total number of columns = ${arr4[0].length}`); // total number of c
 
 // To access value at index i in 1 D array ---> arr[i]
 let output;
-for(let i = 0; i < arr4.length; i++) // rows
-{ 
-    output = ""; // reset the output
-    for(let j = 0; j < arr4[0].length; j++) 
-    {
-        output += (arr4[i][j]) + " "; // Print all the values as given in matrix
-        // console.log(arr4[i][j]); // print at row = i and col = j
-    }
-    console.log(output);
+for (let i = 0; i < arr4.length; i++) // rows
+{
+   output = ""; // reset the output
+   for (let j = 0; j < arr4[0].length; j++) {
+      output += (arr4[i][j]) + " "; // Print all the values as given in matrix
+      // console.log(arr4[i][j]); // print at row = i and col = j
+   }
+   console.log(output);
 }
 
 console.log("print array using table");
