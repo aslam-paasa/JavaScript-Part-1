@@ -89,18 +89,18 @@ promise.then(function (orderId) {
 // Producer
 function createOrder(orderId) {
 
-    const pr = new Promise(function(resolve, reject) {
+    const pr = new Promise(function (resolve, reject) {
         // createOrder
         // validateCart
         // orderId
-        if(!validateCart(cart)) {
+        if (!validateCart(cart)) {
             const err = new Error("Cart is not valid");
             reject(err);
         }
 
         // logic for createOrder
         const orderId = "12345";
-        if(orderId) {
+        if (orderId) {
             setTimeout(() => {
                 resolve(orderId);
             }, 2000);
@@ -118,7 +118,7 @@ function validateCart(cart) {
     return false;   // Error: Cart is not valid
 }
 
-// This displays red color error in browser means we haven't handled this error. This is failing inside the browser and we as a developer should never do this, we should always write code to handle error 
+// This displays red color error in browser means we haven't handled this error. This is failing inside the browser and we as a developer should never do this, we should always write code to handle error
 // What will happen if we push this to production? This will fails in user's computer and they will silently get this error in their browser console and user will not see anything on the page. So we should always gracefully handle error whenever we write code.
 
 // How to handle this error?

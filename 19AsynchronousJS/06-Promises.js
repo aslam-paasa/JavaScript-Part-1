@@ -3,7 +3,7 @@
  - Suppose we are creating an ecommerce website like Amazon so we have a
    cart in it. And this cart is nothing but an array and we will add
    some string items to the cart.*/
-   
+
 const cart = ["shoes", "pants", "kurta"];
 
 // Along with the cart suppose we have 2 more api's :
@@ -24,7 +24,7 @@ const cart = ["shoes", "pants", "kurta"];
 // And we design our api in such a way that we pass this callback function to create order api.
 
 // createOrder(cart, function(orderId) {
-    // proceedToPayment(orderId);
+// proceedToPayment(orderId);
 // });
 
 // Now it is the responsibility of the createOrder api to create an order first of all and then will call our callback function back once the order is created with the orderId.
@@ -87,10 +87,10 @@ const user = fetch(GITHUB_API);
 // As soon as this line of code is executed, we will get a promise object inside this "user". So, fetch return us a promise.
 // user: undefined ---(after execution)-> user: Promise {<pending>}
 // If we see what is inside this promise object :
-    // V user: Promise
-    //     >[[Prototype]]: Promise
-    //     >[[PromiseState]]: "pending"
-    //     >[[PromiseResult]]: "undefined"
+// V user: Promise
+//     >[[Prototype]]: Promise
+//     >[[PromiseState]]: "pending"
+//     >[[PromiseResult]]: "undefined"
 // Whatever we have discussed about the "empty object" or {data: undefined}, it is this - "[[PromiseResult]]: undefined"
 // Right now this promise is in a pending state.
 
@@ -102,10 +102,10 @@ const user = fetch(GITHUB_API);
 console.log(user);
 // Once line no 86 is executed, fetch will return us a promise "user", and this console.log will log that promise.
 // If will show "Promise { <pending> }", but if we expand it, it will show :
-    // V user: Promise
-    //     >[[Prototype]]: Promise
-    //     >[[PromiseState]]: "fulfilled"
-    //     >[[PromiseResult]]: Response
+// V user: Promise
+//     >[[Prototype]]: Promise
+//     >[[PromiseState]]: "fulfilled"
+//     >[[PromiseResult]]: Response
 // Why it is behaving in this way?
 // When this console.log statement is executed, at this point of time the "user" - the promise object is in pending state.
 // JS Engine doesn't wait for anything, it executes quickly. So, when it executes "fetch", it returns a promise and the promise at that particular point of time is in pending state, it takes some time to get the data and fill it back to get "fulfilled"
@@ -117,7 +117,7 @@ console.log(user);
 // How do we attach it?
 // And we can do, it we have GITHUB_API data, this data will come over here and we can just use this as we want to with this data. And that's how we attach callbacks to promise. 
 // We can use this data in our program and do whatever we want to with this.
-user.then(function(data) {
+user.then(function (data) {
     console.log(data);
 })
 // There can be only 3 states inside a Promise :
@@ -170,19 +170,19 @@ promises.then(function (orderId) {
 // What will happen is? Whatever is the response of this createOrder should pass into this chain and then whatever is the response of "proceedToPayment" should pass down the chain and then whatever there is returned from "showOrderSummary" should pass down the chain, for that we have to take care in mind that we return from here.
 // So we always "return" a promise from in promise when we are chaining it. So, that when we get data properly into our chain
 createOrder(cart)
- .then(function (orderId) {
-    return proceedToPayment(orderId);
- })
- .then(function (orderId) {
-    return showOrderSummary(paymentInfo);
- })
- .then(function (paymentInfo) {
-    return updateWalletBalance(paymentInfo);
- });
+    .then(function (orderId) {
+        return proceedToPayment(orderId);
+    })
+    .then(function (orderId) {
+        return showOrderSummary(paymentInfo);
+    })
+    .then(function (paymentInfo) {
+        return updateWalletBalance(paymentInfo);
+    });
 
 //  This is how we write code and our doen't grow horizontally but in a meaning chained fashion.
 // Some developers also like to use arrow function over here :
 createOrder(cart)
- .then(orderId => proceedToPayment(orderId))
- .then(paymentInfo => showOrderSummary(paymentInfo))
- .then(paymentInfo => updateWalletBalance(paymentInfo));
+    .then(orderId => proceedToPayment(orderId))
+    .then(paymentInfo => showOrderSummary(paymentInfo))
+    .then(paymentInfo => updateWalletBalance(paymentInfo));
