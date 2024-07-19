@@ -1,31 +1,44 @@
-/* 
- - Promises are used to handle Async Operation in JS. 
- - Suppose we are creating an ecommerce website like Amazon so we have a
-   cart in it. And this cart is nothing but an array and we will add
-   some string items to the cart.*/
-
+/**
+ * => Promises are used to handle Async Operation in JS. 
+ * => Suppose we are creating an ecommerce website like Amazon. 
+ *    So, we have a cart in it and this cart is nothing but an
+ *    array and we will add some string items to the cart.
+*/
 const cart = ["shoes", "pants", "kurta"];
 
-// Along with the cart suppose we have 2 more api's :
-// (a) createOrder : This api takes "cart" item and return us the order details or order id.
-// createOrder(cart); // orderId
-// This will create an order in our database and will give us orderId
-// (b) proceedToPayment : This api will then take this "orderId" and will take us to the payment page
-// proceedToPayment(orderId); 
-// So, now these 2 api's are asynchronous, we don't know how much time it will take and they are dependent on each other
-// so we can only do proceedToPayment once we have created the order.
+/**
+ * Along with the cart suppose we have 2 more APIs:
+ * 1. createOrder() API: 
+ * => This api takes "cart" item and return us the order details or order id.      
+ *       createOrder(cart); // orderId
+ * => This will create an order in our database and will give us orderId.
+ * 
+ * 2. proceedToPayment() API:
+ * => This api will then take this "orderId" and will take us to the payment page.
+ *       proceedToPayment(orderId); 
+ * => Now these 2 APIs are asynchronous, we don't know how much time it will take 
+ *    and they are dependent on each other. So, we can only do proceedToPayment()
+ *    once we have created the order.
+ * 
+*/
 
-// Callbacks used to be very crucial part when writing asynchronous code in our programming.
-// So how we handle these types of situations in our code using callbacks?
-// We wrap this proceedToPayment function inside a callback function 
-// function() {
-//     proceedToPayment(orderId);
-// }
-// And we design our api in such a way that we pass this callback function to create order api.
-
-// createOrder(cart, function(orderId) {
-// proceedToPayment(orderId);
-// });
+/**
+ * Q. Callbacks used to be very crucial part when writing asynchronous code in our
+ *    programming. So how we handle these types of situations in our code using 
+ *    callbacks?
+ * => We wrap this proceedToPayment() function inside a callback function:
+ * 
+ *    function() {
+ *       proceedToPayment(orderId);
+ *    };
+ * 
+ * => And we design our APIs in such a way that we pass this callback function to 
+ *    createOrder() API.
+ * 
+ *    function createOrder(cart, function(orderId) {
+ *       proceedToPayment(orderId);
+ *    });
+*/
 
 // Now it is the responsibility of the createOrder api to create an order first of all and then will call our callback function back once the order is created with the orderId.
 // This is how we are using async operations using callback but there is very important issue with this code - "Inversion Of Control"

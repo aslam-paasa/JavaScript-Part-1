@@ -14,33 +14,33 @@ Q) What all values we can store in JS?
    maybe defined later
 5. Objects : If we have to somehow store key-value pair, then we can use
    objects.
-    <key, value>
- user1 = 
-    {
-        name: Sanket,
-        company: Google
-    } 
-  - Keys will be unique.
+   <key, value>
+   user1 = 
+      {
+         name: Sanket,
+         company: Google
+      } 
+   - Keys will be unique.
 
-    {
-        name: "IPhone",
-        cost: 1,30,000,
-        color: "deep purple",
-        discount: 5
-        description: "The new apple iphone"
-    } 
+   {
+      name: "IPhone",
+      cost: 1,30,000,
+      color: "deep purple",
+      discount: 5
+      description: "The new apple iphone"
+   } 
 
 6. Null : It actually represents empty value.
- - let b = null;
+   - let b = null;
 
 Primitive : 
- - Means types which are atomic in nature means they doesn't depend on 
+=> Means types which are atomic in nature means they doesn't depend on 
    anything else. 
- - For example, Numbers, which exist on themselves.
+=> For example, Numbers, which exist on themselves.
 
 Non-Primitive :
- - Types which are composition of other types
- - For example, object : to create an object we have to use other properties
+=> Types which are composition of other types
+=> For example, object : to create an object we have to use other properties
    or other primitive datatypes as well.
 */ 
 

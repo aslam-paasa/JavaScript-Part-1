@@ -1,22 +1,24 @@
 /*Common Operations performed on Arrays :
 1. Looping through Array :
- - There are many ways to loop over the Array. The most common ways of
+=> There are many ways to loop over the Array. The most common ways of
    looping through arrays in JavaScript are :
    
    (a) For Loop :
-    Example : 
-        
-        // Creating an Array
-        const cities = ['Mumbai', 'Delhi', 'Kolkata', 'Lucknow', 'Chennai'];
-        // Using loop to iterate over array
-        for (let i = 0; i < cities.length; i++)
-        // Printing array elements using index
-        console.log (cities [i]);
-        // Mumbai
-        // Delhi
-        // Kolkata
-        // Lucknow
-        // Chennai*/
+   Example : 
+
+      // Creating an Array
+      const cities = ['Mumbai', 'Delhi', 'Kolkata', 'Lucknow', 'Chennai'];
+
+      // Using loop to iterate over array
+      for (let i = 0; i < cities.length; i++)
+      // Printing array elements using index
+      console.log (cities [i]);
+      
+      // Mumbai
+      // Delhi
+      // Kolkata
+      // Lucknow
+      // Chennai
 /*   
 
 What are Multi-Dimensional Array?
