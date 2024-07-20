@@ -1,4 +1,5 @@
-/* Bitwise Operators :
+/** 
+ * 6. Bitwise Operators :
  - Let's say we have a number 5 so internally computer doesn't recognize this
    symbol of 5. Computer knows only binary(0 or 1 internally).
  - 5 -> 101

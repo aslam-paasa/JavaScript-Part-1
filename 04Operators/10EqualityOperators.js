@@ -1,5 +1,8 @@
 /**
- * Equality Operators :
+ * +-------------------------+
+ * | 7. Equality Operators : |
+ * +-------------------------+
+ * 
  * 1. Most of the languages contain 1 equality operator but JS has got 2 equality
  *    operator.
  *    a. == (Abstract Equality Operator)
