@@ -1,5 +1,8 @@
-// console.group()
-// The console.group() can help to group different log groups. Copy the following code and paste it on browser console to the groups.
+/**
+ * console.group():
+ * => The console.group() can help to group different log groups.
+ * => Copy the following code and paste it on browser console to the groups.
+*/
 
 const names = ['Asabeneh', 'Brook', 'David', 'John']
 const countries = [

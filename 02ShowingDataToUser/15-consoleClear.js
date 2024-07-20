@@ -1,2 +1,4 @@
-// console.clear()
-// The console.clear() cleans the browser console.
+/**
+ * console.clear():
+ * => The console.clear() method cleans the browser console.
+*/

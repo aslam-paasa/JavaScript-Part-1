@@ -1,5 +1,8 @@
-// CSS
-// We can style logging message using css. Copy the following code and paste it on browser console to see the result.
+/**
+ * CSS: 
+ * => We can style logging message using css. 
+ * => Copy the following code and paste it on browser console to see the result.
+*/
 
 console.log('%c30 Days Of JavaScript', 'color:green') // log output is green
 console.log(
