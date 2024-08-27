@@ -1,35 +1,54 @@
-// Suppose we are creating an ecommerce website and it has a cart which has 3 items inside the cart :
+/**
+ * Suppose we are creating an ecommerce website and it has a cart
+ * which has 3 items inside the cart. Now with these cart items 
+ * we will have to create an order, and suppose we have an async
+ * operation createOrder() api which takes cart and returns orderId.
+ * 
+ *    createOrder(cart); <= orderId
+ * 
+ * After that we proceedToPayment with this orderId:
+ * 
+ *    proceedToPayment(orderId); <= orderId
+*/
 const cart = ["shoes", "pants", "kurta"];
-// Now with these cart items we will have to create an order
-// And suppose we have an async operation createOrder api which takes cart and returns orderId
-// createOrder(cart); // orderId
-// After that we proceedToPayment with this orderId
-// proceedToPayment(orderId); // orderId
 
 
-// Consumer Part
-const promise = createOrder(cart); // orderId
+/**
+ * 1. Consumer:
+*/
+const promise = createOrder(cart); // <= orderId
 
 promise.then(function (orderId) {
     // proceedToPayment(orderId); 
     console.log(orderId);
 })
 
-// Now we will see how does this "createOrder(cart)" return a promise. Who is writing this? We as developers will write this createOrder
-// So now we will see that how we can create our new promise and send it to the "consumer"
+/**
+ * Now we will see how does this "createOrder(cart)" return a promise. 
+ * 
+ * Q. Who is writing this? 
+ * => We as developers will write this createOrder();
+ * 
+ * Note: So now we will see that how we can create our new promise and 
+ *       send it to the "consumer".
+*/
 
-// Producer Part
-// Now we will try to write our own createOrder Function by ourself
-// function createOrder(cart) {...}
-// We already know by design of this api is that this createOrder will return a promise
-// So create a promise : "const pr = ", return the promise : "return pr";
 
-// function createOrder(orderId) {
+/**
+ * 2. Producer:
+ * => Now we will try to write our own createOrder() function by ourself:
+ * 
+ *    function createOrder(cart) {...}
+ * 
+ * => We already know by design of this api is that this createOrder() will
+ *    return a promise. So create a promise: 
+ * 
+ *    function createOrder(orderId) {
+ *       const pr =  ; 
+ *       return the promise : "return pr";
+ *    }
+*/
 
-//     const pr = 
-
-//     return pr;
-// }
 
 // Now we will see how do we create a promise.
 // To create a promise we will use a 'new' keyword and a Promise() constructor.
