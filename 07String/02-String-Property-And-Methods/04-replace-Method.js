@@ -8,11 +8,11 @@
 
 // Syntax : str.replace(searchVal, newVal)
 
-let str = "hello";
-console.log(str.replace("h", "y")); // first jo value match hogi wo replace ho jaegi
-console.log(str.replace("lo", "low")); // first jo value match hogi wo replace ho jaegi
-console.log(str);
+let str01 = "hello";
+console.log(str01.replace("h", "y")); // first jo value match hogi wo replace ho jaegi
+console.log(str01.replace("lo", "low")); // first jo value match hogi wo replace ho jaegi
+console.log(str01);
 console.log();
 
-console.log(str.replaceAll("lo", "low")); // saari metching values replace ho jaegi 
-console.log(str);
+ // saari metching values replace ho jaegi 
+console.log(str01);

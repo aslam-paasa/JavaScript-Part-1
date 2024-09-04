@@ -1,3 +1,4 @@
+
 // Closure gives you access to an outer function's scope from an inner function.
 // Scope means uske andr jo v humne variables, functions etc ka access humein
 // milta hai

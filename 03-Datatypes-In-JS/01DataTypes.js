@@ -1,68 +1,108 @@
-/* DataTypes :
- - A data type, in programming, is a classification that specifies which type
-   of value a variable has and what type of mathematical, relational or logical
-   operations can be applied to it without causing an error.
- - A string, for example, is a data type that is used to classify text and an
-   integer is a datatype used to classify whole numbers.
+/** 
+ * DataTypes :
+ * 
+ * 1. A data type, in programming, is a classification that specifies which type
+ *   of value a variable has and what type of mathematical, relational or logical
+ *   operations can be applied to it without causing an error.
+ * 
+ * 2. A string, for example, is a data type that is used to classify text and an
+ *   integer is a datatype used to classify whole numbers.
+ */ 
 
-Q) What all values we can store in JS?
-1. Number : 10, -3, 2.6, 3.414, 100, 1000 etc...
-2. String (text) : "Sanket" (double quotes), 'Random' (single quotes), 
-   `Some Text` (Backtick)
-3. Boolean : true, false (these are all small values)
-4. Undefined : keyword -> used to represent something not defined yet but 
-   maybe defined later
-5. Objects : If we have to somehow store key-value pair, then we can use
-   objects.
-   <key, value>
-   user1 = 
-      {
-         name: Sanket,
-         company: Google
-      } 
-   - Keys will be unique.
+/**
+ * Q. What all values we can store in JS?
+ * 
+ * => 1. Number : 10, -3, 2.6, 3.414, 100, 1000 etc...
+ * 
+ * => 2. String (text) : 
+ *       (a) "Sanket" (double quotes), 
+ *       (b) 'Random' (single quotes), 
+ *       (c) `Some Text` (Backtick)
+ * 
+ * => 3. Boolean : 
+ *       (a) true, (b) false (these are all small values)
+ * 
+ * => 4. Undefined : 
+ *       => keyword -> used to represent something not defined yet but 
+ *                     maybe defined later.
+ * 
+ * => 5. Objects : If we have to somehow store key-value pair, then we 
+ *                 can use objects.
+ * 
+ *          <key, value>
+ * 
+ *      user1 = 
+ *        {
+ *          name: Sanket,
+ *          company: Google
+ *        } 
+ * 
+ * Note: Keys will be unique.
+ *
+ *    {
+ *       name: "IPhone",
+ *       cost: 1,30,000,
+ *       color: "deep purple",
+ *       discount: 5
+ *       description: "The new apple iphone"
+ *    } 
+ * 
+ * => 6. Null : 
+ *       (a) It actually represents empty value.
+ *       (b) let b = null;
+ */ 
 
-   {
-      name: "IPhone",
-      cost: 1,30,000,
-      color: "deep purple",
-      discount: 5
-      description: "The new apple iphone"
-   } 
-
-6. Null : It actually represents empty value.
-   - let b = null;
-
-Primitive : 
-=> Means types which are atomic in nature means they doesn't depend on 
-   anything else. 
-=> For example, Numbers, which exist on themselves.
-
-Non-Primitive :
-=> Types which are composition of other types
-=> For example, object : to create an object we have to use other properties
-   or other primitive datatypes as well.
+/**
+ * Primitive : 
+ * 1. Means types which are atomic in nature means they doesn't depend on 
+ *    anything else. 
+ * 2. For example, Numbers, which exist on themselves.
+ * 
+ * 
+ * Non-Primitive :
+ * 1. Types which are composition of other types.
+ * 2. For example, object : 
+ *    => To create an object we have to use other properties or other 
+ *       primitive datatypes as well.
 */ 
 
+
+/**
+ * 1. Number:
+*/
 var marks = 100;
-var names = "Sanket";
-var ages;
-var company = null;
-var salary = undefined;
-var isStudent = false;
 console.log("Marks = ", marks);
+
+
+/**
+ * 2. String:
+*/
+var names = "Sanket";
 console.log("Name = ", names);
+
+
+/**
+ * 3. Undefined
+*/
+var ages;
 console.log("age = ", ages);
-console.log("Company = ", company);
+
+var salary = undefined;
 console.log("Salary = ", salary);
+
+
+/**
+ * 4. Null
+*/
+var company = null;
+console.log("Company = ", company);
+
+
+/**
+ * 5. Boolean:
+*/
+var isStudent = false;
 console.log("Is A Student ? = ", isStudent);
-
-"use strict";// Treat all JS code as newer version (Automatically newer version m chlta h)
-
-
-// Error : Because of node js, we need to use chrome developer tools or browser
-// It is working inside browser because everything is inside document but ab node m alert ko use krne ka different syntax h
-// alert(3 + 3);    // we are using nodejs, not browser
 
 
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++

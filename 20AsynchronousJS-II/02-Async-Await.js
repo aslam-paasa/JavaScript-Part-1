@@ -1,6 +1,6 @@
 /**
  * Async-Await:
- * => Whatever we have learnt in Promise if fine, but some people find it
+ * => Whatever we have learnt in Promise it's fine, but some people find it
  *    irritating. If we have very big code then this ".then()" code become
  *    quite messy and confusing. That's why there was something known as
  *    Async-Await was introduced.
