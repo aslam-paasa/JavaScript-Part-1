@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing Elements</title>
+</head>
+<body>
+    
+    <img id="imgOne" alt="">
+    <img class="imgOne" alt="">
+
+    <h3 id="oneEle"></h3>
+    <h3 class="oneEle"></h3>
+
+    <h4></h4>
+    <h4></h4>
+    <h4></h4>
+
+    <script>
+        /**
+         * Q. Create two image in HTML and two h3 and select all of them,
+         *    this way:
+         *    (a) give 1st image some id
+         *    (b) give 2nd image a class
+         *    (c) give 1st h3 a class
+         *    (d) give 2nd h3 an id
+         * */ 
+
+        var firstImg = document.querySelector('#imgOne');
+        var secImg = document.querySelector('.imgOne');
+
+        var firstH3 = document.querySelector('#oneEle');
+        var secH3 = document.querySelector('.oneEle');
+
+        /**
+         * Issue:
+         * Agar aapke paas bahut saare h4 hai and aap select karte ho to
+         * sirf pehla h4 select hoga.
+        */
+        var h4 = document.querySelector("h4");
+
+        /**
+         * Solution: document.querySelectorAll();
+         * => Ye ek baar m same naam k saare elements select krna chahte
+         *    hai to we can use 'querySelectorAll()'
+        */
+        var h4 = document.querySelectorAll("h4");
+
+    </script>
+</body>
+</html>

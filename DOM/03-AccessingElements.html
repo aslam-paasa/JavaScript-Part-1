@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing Elements</title>
+</head>
+<body>
+    <h1 id="abcd">hi</h1>
+    <h2 class="abcd">hey</h2>
+    <h3>hello</h3>
+    <button>Download</button>
+    <script>
+        /**
+         * DOM Manipulation:
+         * => Iss page m dikh rhe chijo ko change kr dena jo v body tag
+         *    k andr hai is called DOM Manipulation.
+         * 
+         * Q. How many ways we can select elements?
+         * => 1. document.getElementById        : Selects ID only
+         *    2. document.getElementByClassName : Selects className only
+         *    3. document.getElementByTagName   : Selects TagName only
+         * 
+         * => But there is one more tag which can do everything jo ye
+         *    teeno krte hai.
+         *    4. document.querySelector: 
+         *       => Write element name in single quotes i.e. 'button'
+         * 
+         * Examples of querySelector:
+         * a. var btn = document.querySelector('button'); 
+         * b. document.querySelector('#abcd'); => Select by Id
+         * c. document.querySelector('.abcd'); => Select by Class
+         * d. document.querySelector('h3');    => Select by tag name
+         * 
+         * 
+         * Q. How can we change text inside the button from download to
+         *    starting...?
+         * => 1. Select the button jispe changes hogi:
+         *       (a) Select & Save inside a variable:
+         *           var btn = document.querySelector('button'); 
+         * => 2. 
+         * */ 
+
+        // Select by Id:
+        document.querySelector('#abcd');
+
+        // Select by Class:
+        document.querySelector('.abcd');
+
+        // Select by tag name:
+        document.querySelector('h3');
+        
+        var btn = document.querySelector('button');
+    </script>
+</body>
+</html>

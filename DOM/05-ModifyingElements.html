@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button>Download Now</button>
+    <h1>Hey, </h1>
+    <h2>Hey, </h2>
+
+    <script>
+        /**
+         * Modifying Elements:
+         * 1. We have learned: Select Elements
+         * 2. Today we will learn: How to modify elements
+         *    (a) innerHTML
+         *    (b) textContent
+         * 3. Tomorrow we will learn: When to modify elements
+        */
+
+        /**
+         * => Kisi ko v change krne se pehle, pehla stop hota hai usko
+         *    select krna.
+         * => Humne element ko select kr k ek variable m rkh diya, it
+         *    means ab humaare button ka poora control iss "btn" k
+         *    paas hai. Ab hm jo chahe wo kr skte hai "btn" se.
+         * 
+         * Q. How to modify elements?
+         * => button k andr likhe hue text ko badalne k liye uss element
+         *    ko select kr liye hai.
+         * => Ab uss var "btn" pe "textContent" likhnge jo text ko 
+         *    manipulate krne k kaam aata hai.
+         * 
+         *    var btn = document.querySelector('button');
+         *    btn.textContent = "Starting...";
+        */
+    
+        var btn = document.querySelector('button');
+        btn.textContent = "Starting...";
+
+        /**
+         * Issue: 
+         * => Browser pe humein pehle "download" chaiye fir usko jb
+         *    click krnge to "starting..." m change krna hai. But
+         *    humein direct "starting..." display ho rha hai.
+         * 
+         * Solution: We will see later
+        */
+
+        /**
+         * Q. How to add new text content with old text content?
+         * => '=' means replacing old data with new data.
+         * => '+=' means adding new data with old data.
+        */
+        var h1 = document.querySelector('h1');
+        h1.textContent += 'Mohammad';
+
+        /**
+         * Q. How to add HTML Code instead of plain text?
+         * => innerHTML
+        */
+        var h2 = document.querySelector('h2');
+        // h2.textContent += '<i>Aslam</i>'; // considered as text
+        h2.innerHTML += '<i>Aslam</i>';      // considered as html tag
+        
+        
+    </script>
+</body>
+</html>

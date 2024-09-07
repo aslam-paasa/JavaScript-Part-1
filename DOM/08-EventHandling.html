@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>make new card</button>
+    <script>
+        /**
+         * Event Handling: Elements ki activity handle krna
+         * => Jb v aap kisi element par kisi v prakaar ka koi action 
+         *    krte ho to waha par event by default, automatically raise
+         *    hota hai. Agar humne koi event listener nhi bnaya hai to
+         *    wo event ignore kr diya jaata hai, par agar aapne listener
+         *    bnaya hai uss event par to wo event ignore nhi kiya jaega
+         *    balki iska listener chalega.
+         * 
+         * => var btn = document.querySelector('button');
+         * => btn.addEventListener();
+         *    It means button pe ek activity add kro, jispe 2 chije
+         *    lagegi:
+         *    (a) event: activity
+         *    (b) callback: It's a fn jisko addEventListener() chalaega
+         *        It button pe hm jiss tarah ka activity/event lagaenge
+         *        to jb v button pe "event" call hoga to ye callback fn
+         *        chalega.
+         * 
+         * => var btn = document.querySelector('button');
+         *    btn.addEventListener('click', function() {});
+         * 
+         * => Now it means jb v button pe 'click' hoga to humaara callback
+         *    fn run hoga.
+         * 
+         * Q. Saare eventListener() k events k naam kaise jaanenge?
+         * => ChatGPT
+         * */ 
+
+        var btn = document.querySelector('button');
+        btn.addEventListener('click', function() {
+            btn.textContent = "starting...";
+            btn.style.backgroundColor = 'salmon';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .makeitred{
+            color: red;
+            font-family: sans-serif;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /**
+         * Creating & Deleting Elements:
+         * 1. createElement()
+         * 2. appendChild()
+         * 3. removeChild()
+         * 
+         * 1. createElement():
+         * => Blank body tag k andr JS k help se v hm elements create kr
+         *    skte hai.
+         * => var h1 = document.createElement('h1');
+         * 
+         * Note: Element created, but display nhi hoga qki humne avi tk
+         *       humne apne element m kuch v add nhi kiya hai.
+         * 
+         * => Set content to our element: 
+         *    h1.textContent = "Hello, world!"
+         * 
+         * => We can also provide class to it:
+         *    h1.classList.add('makeitred');
+         * 
+         * Console: <h1 class="makeitred">Hello, world!<h1>
+         * 
+         * Note: Mera element avi tk JS m stay kr rha hai, HTML m aaya
+         *       nhi hai, isliye display nhi ho rha.
+         * 
+         * 2. appendChild():
+         * => kahaParRakhoge.appendChild() basically means agar mujhe
+         *    apne element ko body tag k andr rkhna hai.
+         * => So, kahaParRakhoge k jagha par body rkhnge:
+         *    document.querySelector("body").appendChild();
+         * => append means jodo, child means baccha. It means body k 
+         *    andr ek baccha jud jaega. But uske liye humein ab btana
+         *    hoga body k andr kn sa baccha judega:
+         *    document.querySelector("body").appendChild(h1);
+         * 
+         * 3. removeChild():
+         * => To remove the child element using JS.
+         * */ 
+
+        var h1 = document.createElement('h1');
+        h1.textContent = "Hello, world!";
+        h1.classList.add('makeitred');
+        document.querySelector("body").appendChild(h1);
+        document.querySelector("body").removeChild(h1);
+    </script>
+</body>
+</html>

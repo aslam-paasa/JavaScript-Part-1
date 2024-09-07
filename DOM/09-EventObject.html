@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /**
+         * Event Object:
+         * => Jb v hum apne mouse ko move kr to uski location hm chahte
+         *    hai.
+         * 
+         * Q. Mouse kispe move ho rha hai?
+         * => body : document.querySelector("body");
+         * => Now add addEventListener() to the body, with "mousemove"
+         *    event and callback fn.
+         *    
+         * Q. How can we get the details of the mouse movement? Mouse
+         *    Location i.e. x-y axis mouse location.
+         * => callback fn k andr parameter paas kr denge jisme "mousemove"
+         *    event humein apni saari details dega.
+         * 
+         *    body.addEventListener("mousemove", function(details) {
+         *       console.log("moving...");
+         *    });
+         * 
+         * => Ab "details" k andr jitne details h unme se humein sirf 2 values
+         *    chaiye:
+         *    (a) clientX
+         *    (b) clientY
+         * 
+         * => Ab x-y axis pe ek circle daal denge. To x-y ki movement jaha
+         *    jaha hogi, humaari circle waha waha jaegi.    
+        */
+        var body = document.querySelector("body");
+        body.addEventListener("mousemove", function(details) {
+            console.log("moving...");
+        });
+
+        document
+    </script>
+</body>
+</html>

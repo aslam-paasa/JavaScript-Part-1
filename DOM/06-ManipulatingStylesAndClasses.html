@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .makeitred{
+            color: aquamarine;
+            font-family: gilroy;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hey, </h1>
+    <h2>Mohammad</h2>
+    <script>
+        /**
+         * Manipulating Styles & Classes:
+         * 
+         * 1. style:
+         * => Using JS humein apne "text" ki font & color change krna
+         *    hai.
+         * => But hm jb CSS se kr skte hai to JS se font & color change
+         *    q krnge? Qki aisa ho skta hai ki koi button ho aur hum
+         *    jb usse click kre to font & color change ho, but CSS m
+         *    direct change hota hai.
+         * => var h1 = document.querySelector("h1");
+         *    h1.style.color = 'red';
+         * => JS m 'style' ka mtlb hi CSS hai. It means hm style likh 
+         *    rha hai to CSS change kr rhe hai. 
+         * 
+         * 2. classList:
+         * => class ko CSS se link kr k uske features utha skti hai aur
+         *    usko apne element pe add or remove kr skte hai.
+         * => h2.classList.add('makeitred');
+        */
+        var h1 = document.querySelector("h1");
+        h1.style.color = 'red';
+        h1.style.fontFamily = 'gilroy';
+        h1.style.fontSize = '16px';
+
+        var h2 = document.querySelector("h2");
+        h2.classList.add('makeitred'); // adding style to element's class
+        // h2.classList.remove('makeitred'); // removing styling
+
+    </script>
+</body>
+</html>
