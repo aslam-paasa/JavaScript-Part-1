@@ -1,8 +1,8 @@
 /**
  * Async JS:
- * 1. Async JavaScript
- * 2. Fetch API
- * 3. Axios (or other HTTP libraries)
+ * 1. Async JavaScript [done]
+ * 2. Fetch API [done]
+ * 3. Axios (or other HTTP libraries) [done]
  * 4. Callbacks
  * 5. Promises
  * 6. Async/Await
